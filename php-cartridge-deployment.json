@@ -1,0 +1,37 @@
+ {
+ "type": "php",
+ "provider": "apache",
+ "host": "chamilad.org",
+ "displayName": "PHP",
+ "description": "PHP Cartridge",
+ "version": "7",
+ "multiTenant": "false",
+ "portMapping": [
+   {
+     "protocol": "http",
+     "port": "80",
+     "proxyPort": "8280"
+   }
+ ],
+ "iaasProvider": [
+   {
+     "type": "openstack",
+     "imageId": "RegionOne/aa4fd142-5e3f-4c50-8ac8-5ea32aa326b4",
+     "maxInstanceLimit":"4",
+     "property": [
+       {
+         "name": "instanceType",
+         "value": "RegionOne/3"
+       },
+       {
+         "name": "keyPair",
+         "value": "chamilad-prasanna"
+       },
+       {
+         "name": "securityGroups",
+         "value": "default"
+       }
+     ]
+   }
+ ]
+}

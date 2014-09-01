@@ -1,0 +1,23 @@
+{
+  "id": "economyDeploymentPolicy",
+  "partitionGroup": [
+    {
+      "id": "openstack1",
+      "partitionAlgo": "one-after-another",
+      "partition": [
+        {
+          "id": "p1",
+          "partitionMin": 1,
+          "partitionMax": 3,
+          "provider": "openstack",
+          "property": [
+            {
+              "name": "region",
+              "value": "RegionOne"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
