@@ -8,14 +8,7 @@
         {
           "id": "p1",
           "partitionMin": 1,
-          "partitionMax": 3,
-          "provider": "openstack",
-          "property": [
-            {
-              "name": "region",
-              "value": "RegionOne"
-            }
-          ]
+          "partitionMax": 3
         }
       ]
     }
