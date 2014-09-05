@@ -1,10 +1,10 @@
 {
-  "type": "php",
+  "type": "tomcat",
   "provider": "apache",
   "host": "stratos.com",
-  "displayName": "PHP",
-  "description": "PHP Cartridge",
-  "version": "7",
+  "displayName": "Tomcat",
+  "description": "Tomcat Application Cartridge",
+  "version": "1",
   "multiTenant": "false",
   "portMapping": [
       {
@@ -39,5 +39,13 @@
         }
         ]
     }
-    ]
+    ],
+    "loadBalancer":
+    {
+      "type":"lb",
+      "property":{
+        "name":"default.load.balancer",
+        "value":"true"
+      }
+    }
 }

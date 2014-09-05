@@ -1,18 +1,19 @@
 {
-  "type": "php",
+  "type": "lb",
   "provider": "apache",
-  "host": "stratos.com",
-  "displayName": "PHP",
-  "description": "PHP Cartridge",
-  "version": "7",
+  "displayName": "Lb",
+  "description": "Lb Cartridge",
+  "version": "1.0",
+  "host": "stratos.apache.org",
+  "defaultAutoscalingPolicy": "economyPolicy",
+  "defaultDeploymentPolicy": "depexp",
   "multiTenant": "false",
   "portMapping": [
-      {
-        "protocol": "http",
-        "port": "80",
-        "proxyPort": "8280"
-      }
-      ],
+    {
+      "protocol": "http",
+      "port": "80"
+    }
+  ],
   "deployment": {},
   "iaasProvider": [
     {
@@ -26,8 +27,8 @@
         ],
       "property": [
         {
-        "name": "instanceType",
-        "value": "RegionOne/3"
+          "name": "instanceType",
+          "value": "RegionOne/3"
         },
         {
         "name": "keyPair",
@@ -37,7 +38,13 @@
         "name": "securityGroups",
         "value": "default"
         }
-        ]
+      ]
     }
-    ]
+  ],
+  "property": [
+    {
+      "name": "load.balancer",
+      "value": "true"
+    }
+  ]
 }

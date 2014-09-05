@@ -1,10 +1,10 @@
 {
-  "type": "php",
-  "provider": "apache",
+  "type": "mysql",
+  "provider": "data",
   "host": "stratos.com",
-  "displayName": "PHP",
-  "description": "PHP Cartridge",
-  "version": "7",
+  "displayName": "MySQL",
+  "description": "MySQL Data Cartridge",
+  "version": "1",
   "multiTenant": "false",
   "portMapping": [
       {
@@ -39,5 +39,13 @@
         }
         ]
     }
-    ]
+    ],
+    "loadBalancer":
+    {
+      "type":"lb",
+      "property":{
+        "name":"default.load.balancer",
+        "value":"true"
+      }
+    }
 }
