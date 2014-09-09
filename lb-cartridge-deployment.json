@@ -1,6 +1,6 @@
 {
   "type": "lb",
-  "provider": "apache",
+  "provider": "lb",
   "displayName": "Lb",
   "description": "Lb Cartridge",
   "version": "1.0",
