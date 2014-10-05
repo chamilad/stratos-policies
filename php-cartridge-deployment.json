@@ -1,7 +1,7 @@
 {
   "type": "php",
   "provider": "apache",
-  "host": "stratos.com",
+  "host": "chamilad.com",
   "displayName": "PHP",
   "description": "PHP Cartridge",
   "version": "7",
@@ -13,15 +13,14 @@
         "proxyPort": "8280"
       }
       ],
-  "deployment": {},
   "iaasProvider": [
     {
       "type": "openstack",
-      "imageId": "RegionOne/5a29811a-04be-4494-92f8-b79a057741e7",
+      "imageId": "RegionOne/93b767df-7087-4c22-99f5-a105c22d1f9b",
       "networkInterfaces":[
         {
-        "name":"net0",
-        "networkUuid":"c465e4bc-b272-487b-915b-a3f52f82167a"
+        "name":"net1-nonroutable",
+        "networkUuid":"84d52a6d-a9e5-472a-9935-a0e195fe5b4a"
         }
         ],
       "property": [
@@ -31,7 +30,7 @@
         },
         {
         "name": "keyPair",
-        "value": "chamilad-prasanna"
+        "value": "chamilad"
         },
         {
         "name": "securityGroups",
